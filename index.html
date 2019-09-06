@@ -10,59 +10,86 @@
   </head>
   <body>
     <div class="overflow">
-      <header class="site-header">
-        <nav class="site-nav">
-          <ul class="site-nav-list">
-            <li class="site-nav-item d-sm-none">
-              <button class="site-nav-link toggle-mobile-menu" type="button">
-                <div class="line"></div>
-                <div class="line"></div>
-              </button>
-            </li>
-            <li class="site-nav-item logo"><a class="site-nav-link" href="/"><img src="/images/logo.svg" width="101" height="18" alt="Elefund"></a></li>
-            <li class="site-nav-item d-none d-sm-block"><a class="site-nav-link" href="/portfolio">Portfolio</a></li>
-            <li class="site-nav-item d-none d-sm-block"><a class="site-nav-link" href="/about">About us</a></li>
-          </ul>
-        </nav>
-        <div class="site-menu-mobile-backdrop d-sm-none"></div>
-        <nav class="site-menu-mobile d-sm-none">
-          <ul class="site-menu-mobile-list">
-            <li class="site-menu-mobile-logo"><a class="site-menu-mobile-link" href="/"><img src="/images/logo-shape.svg" width="40" height="24" alt="Elefund"></a></li>
-            <li class="site-menu-mobile-item"><a class="site-menu-mobile-link" href="/portfolio">Portfolio</a></li>
-            <li class="site-menu-mobile-item"><a class="site-menu-mobile-link" href="/about">About us</a></li>
-          </ul>
-          <div class="site-menu-mobile-copyright">&copy; 2019 Elefund. All rights reserved.</div>
-        </nav>
-      </header>
-      <section class="content-section hero">
-        <div class="content-toggle-wrap">
-          <div class="content-toggle loader" id="slider-circle-animation"><i class="icomoon icon-arrow-right"></i></div>
-          <div class="content-toggle mover animate" id="slider-circle-mover"></div>
+            <header class="site-header">
+              <nav class="site-nav">
+                <ul class="site-nav-list">
+                  <li class="site-nav-item d-sm-none">
+                    <button class="site-nav-link toggle-mobile-menu" type="button">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                    </button>
+                  </li>
+                  <li class="site-nav-item logo"><a class="site-nav-link" href="/"><img src="/images/logo.svg" width="101" height="18" alt="Elefund"></a></li>
+                  <li class="site-nav-item d-none d-sm-block"><a class="site-nav-link" href="/portfolio">Portfolio</a></li>
+                  <li class="site-nav-item d-none d-sm-block"><a class="site-nav-link" href="/about">About us</a></li>
+                </ul>
+              </nav>
+              <div class="site-menu-mobile-backdrop d-sm-none"></div>
+              <nav class="site-menu-mobile d-sm-none">
+                <ul class="site-menu-mobile-list">
+                  <li class="site-menu-mobile-logo"><a class="site-menu-mobile-link" href="/"><img src="/images/logo-shape.svg" width="40" height="24" alt="Elefund"></a></li>
+                  <li class="site-menu-mobile-item"><a class="site-menu-mobile-link" href="/portfolio">Portfolio</a></li>
+                  <li class="site-menu-mobile-item"><a class="site-menu-mobile-link" href="/about">About us</a></li>
+                </ul>
+                <div class="site-menu-mobile-copyright">&copy; 2019 Elefund. All rights reserved.</div>
+              </nav>
+            </header>
+      <section class="hero-section-slider">
+        <div class="hero-section-arrow-block">
+          <button class="hero-section-arrow loader js-slider-next" id="slider-circle-animation" type="button" data-target="home-slider"><i class="icomoon icon-arrow-right"></i></button>
+          <div class="hero-section-arrow-mover animate" id="slider-circle-mover"></div>
         </div>
-        <div class="container">
-          <div class="content-shrink">
-            <h1>We invest in founders of seed stage companies</h1>
-            <p class="lead">We invested in Michael and Alex of Calm back in 2013. Calm is now valued at $1 billion.</p>
+        <div class="js-slider" id="home-slider">
+          <div class="content-section js-slider-item">
+            <div class="container">
+              <div class="content-shrink">
+                <h1>We invest in founders of seed stage companies</h1>
+                <p class="lead">We invested in Michael and Alex of Calm back in 2013. Calm is now valued at $1 billion.</p>
+              </div>
+            </div>
+            <div class="content-image content-image-filler">
+              <div class="img-clip">
+                <div class="filler"></div><img src="/images/unsplash.jpg" width="1600" height="1200" alt="">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="content-image content-image-filler">
-          <div class="img-clip">
-            <div class="filler" id="slider-filler"></div>
+          <div class="content-section js-slider-item">
+            <div class="container">
+              <div class="content-shrink">
+                <h1>We invested in Michael and Alex of Calm back in 2013. Calm is now valued at $1 billion.</h1>
+                <p class="lead">We invest in founders of seed stage companies</p>
+              </div>
+            </div>
+            <div class="content-image content-image-filler">
+              <div class="img-clip">
+                <div class="filler"></div><img src="/images/unsplash-2.jpg" width="1600" height="1200" alt="">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="slick-slider content-image" id="slider">
-          <div class="img-clip"><img src="/images/unsplash.jpg" width="1600" height="1200" alt=""></div>
-          <div class="img-clip"><img src="/images/unsplash-2.jpg" width="1600" height="1200" alt=""></div>
         </div>
       </section>
-      <section class="content-section">
-        <div class="container">
-          <div class="content-shrink-wide content-centered">
-            <h2>We’ve invested in transformational companies like Robinhood, Carta, and Calm</h2>
-            <p class="lead"><a href="/portfolio">View our portfolio<i class="icomoon icomoon-pad-left icon-arrow-right"></i></a></p>
+      <section class="content-section home-portfolio-section">
+        <div class="js-slider" id="portfolio-slider">
+          <div class="js-slider-item">
+            <div class="container">
+              <div class="content-shrink-wide content-centered">
+                <h2>We’ve invested in transformational companies like Robinhood, Carta, and Calm</h2>
+                <p class="lead"><a href="/portfolio">View our portfolio<i class="icomoon icomoon-pad-left icon-arrow-right"></i></a></p>
+              </div>
+            </div>
+            <div class="logo-clip brand-calm"><img class="img" src="/images/brands/calm.png" width="160" height="63" alt="Calm"></div>
+          </div>
+          <div class="js-slider-item">
+            <div class="container">
+              <div class="content-shrink-wide content-centered">
+                <h2>We’ve invested Robinhood, Carta, and Calm</h2>
+                <p class="lead"><a href="/portfolio">View our portfolio<i class="icomoon icomoon-pad-left icon-arrow-right"></i></a></p>
+              </div>
+            </div>
+            <div class="logo-clip brand-calm"><img class="img" src="/images/brands/fastly.svg" width="160" height="63" alt="fastly"></div>
           </div>
         </div>
-        <div class="logo-clip blue"><img class="img" src="/images/brands/calm.png" width="160" height="63" alt="Calm"></div><a class="btn-round-blue" href="/portfolio"><i class="icomoon icon-arrow-right"></i></a>
+        <button class="btn-round-blue js-slider-next" type="button" data-target="portfolio-slider"><i class="icomoon icon-arrow-right"></i></button>
       </section>
     </div>
     <div class="overflow">
@@ -70,31 +97,33 @@
         <div class="container">
           <div class="content-shrink">
             <h2 class="animate-element">When we invest in companies, we become part of the team</h2>
-            <p class="animate-element-delay"><a class="btn" href="/products">Learn about us<i class="icomoon icomoon-pad-left icon-arrow-right"></i></a></p>
+            <p class="animate-element-delay"><a class="btn" href="/products">Learn about us<i class="icomoon icomoon-pad-left icon-arrow-right"></i><img class="btn-bg" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzM1LjczIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xMCAwaDMxNS43M2ExMCAxMCAwIDAgMSA3IDE3LjEzbC01MC44MyA1MGExMCAxMCAwIDAgMSAtNyAyLjg3aC0yNjQuOWExMCAxMCAwIDAgMSAtMTAtMTB2LTUwYTEwIDEwIDAgMCAxIDEwLTEweiIgZmlsbD0iI2ZmNWQ0YiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" width="328" height="68" alt=""></a></p>
           </div>
         </div>
-        <div class="content-image top img-clip"><img src="/images/unsplash.jpg" width="1200" height="1200" alt=""></div>
+        <div class="content-image top">
+          <div class="img-clip"><img src="/images/unsplash.jpg" width="1200" height="1200" alt=""></div>
+        </div>
       </section>
-      <footer class="site-footer">
-        <nav class="site-nav">
-          <ul class="site-nav-list">
-            <li class="site-nav-item"><a class="site-nav-link" href="/"><img class="logo" src="/images/logo-full.svg" width="155" height="32" alt="Elefund"></a></li>
-            <li class="site-nav-item"><a class="site-nav-link" href="/portfolio">Portfolio</a></li>
-            <li class="site-nav-item"><a class="site-nav-link" href="/about">About us</a></li>
-          </ul>
-          <div class="copyright">&copy; 2019 Elefund. All rights reserved.</div>
-        </nav>
-      </footer>
-      <div class="body-bg">
-        <svg class="body-bg-cut" viewBox="0 0 1440 1452.05" xmlns="http://www.w3.org/2000/svg">
-          <path d="m0 1452.05 1440-1452.05v1452.05z" fill="#fafafa" fill-rule="evenodd"></path>
-        </svg>
-        <div class="body-bg-filler"></div>
-      </div>
-      <div class="modal" id="modal"></div>
-      <script src="/javascripts/libs.js"></script>
-      <script src="/javascripts/templates.js"></script>
-      <script src="/javascripts/app.js"></script>
+            <footer class="site-footer">
+              <nav class="site-nav">
+                <ul class="site-nav-list">
+                  <li class="site-nav-item"><a class="site-nav-link" href="/"><img class="logo" src="/images/logo-full.svg" width="155" height="32" alt="Elefund"></a></li>
+                  <li class="site-nav-item"><a class="site-nav-link" href="/portfolio">Portfolio</a></li>
+                  <li class="site-nav-item"><a class="site-nav-link" href="/about">About us</a></li>
+                </ul>
+                <div class="copyright">&copy; 2019 Elefund. All rights reserved.</div>
+              </nav>
+            </footer>
+            <div class="body-bg">
+              <svg class="body-bg-cut" viewBox="0 0 1440 1452.05" xmlns="http://www.w3.org/2000/svg">
+                <path d="m0 1452.05 1440-1452.05v1452.05z" fill="#fafafa" fill-rule="evenodd"></path>
+              </svg>
+              <div class="body-bg-filler"></div>
+            </div>
+            <div class="modal" id="modal"></div>
+            <script src="/javascripts/libs.js"></script>
+            <script src="/javascripts/templates.js"></script>
+            <script src="/javascripts/app.js"></script>
     </div>
   </body>
 </html>

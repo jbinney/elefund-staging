@@ -22,8 +22,8 @@ function getCompaniesData() {
       companiesList = data
     })
     .fail(function() {
-      console.log( "Error getting json" );
-    });
+      console.log( "Error getting json" )
+    })
 }
 
 function getCompanyData(companyId) {
@@ -42,14 +42,14 @@ function toggleMobileMenu() {
 
 $(document).ready(function() {
 
-  var companiesList, companyItem;
+  var companiesList, companyItem
   getCompaniesData()
 
   $('.toggle-modal').on('click', function(event) {
     event.preventDefault()
     targetCompany = $(this).attr('href').trim().replace('#', '')
     openModal(targetCompany)
-  });
+  })
 
   $('#modal').on('click', '.modal-close, .modal-backdrop', function() {
     closeModal()
@@ -67,51 +67,81 @@ $(document).ready(function() {
     tolerance: 200,
     debounce: 100,
     container: window
-  });
+  })
 
   os.on('enter', '.animated-section', (element, event) => {
-    $('.animate-element').removeClass('offset');
-    $('.animate-element-delay').removeClass('offset');
-  });
+    $('.animate-element').removeClass('offset')
+    $('.animate-element-delay').removeClass('offset')
+  })
 
-  $('.animate-element').addClass('offset');
-  $('.animate-element-delay').addClass('offset');
+  $('.animate-element').addClass('offset')
+  $('.animate-element-delay').addClass('offset')
 
-  if ($('#slider').length) {
+  if ($('#home-slider').length) {
 
-    var fillerTimeoutDelay;
+    var fillerTimeoutDelay
 
-    function fillerTimeout() {
+    function fillerTimeout(currentSlide) {
       fillerTimeoutDelay = setTimeout(function() {
-        $('#slider-filler').removeClass('animate')
+        $('#home-slider .slick-slide[data-slick-index=' + currentSlide + '] .filler').removeClass('animate')
       }, 200)
     }
 
     
-    $('#slider').on('init', function() {
+    $('#home-slider').on('init', function() {
       $('#slider-circle-animation').addClass('animate')
-      $('#slider-filler').addClass('animate')
-    });
+      $('#home-slider .slick-slide[data-slick-index=0] .filler').addClass('animate')
+    })
 
-    $('#slider').on('beforeChange', function() {
+    $('#home-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
       $('#slider-circle-animation').removeClass('animate')
       $('#slider-circle-mover').removeClass('animate')
-      fillerTimeout()
-    });
+      fillerTimeout(currentSlide)
+    })
 
-    $('#slider').on('afterChange', function() {
+    $('#home-slider').on('afterChange', function(slick, currentSlide) {
       $('#slider-circle-animation').addClass('animate')
-      $('#slider-filler').addClass('animate')
+      $('#home-slider .slick-slide[data-slick-index='+ currentSlide.currentSlide + '] .filler').addClass('animate')
       $('#slider-circle-mover').addClass('animate')
-      clearTimeout(fillerTimeoutDelay);
-    });
+      clearTimeout(fillerTimeoutDelay)
+    })
 
-    $('#slider').slick({
+    $('#home-slider').slick({
       arrows: false,
       autoplay: true,
       autoplaySpeed: 5000,
-      fade: true
-    });
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      swipe: false,
+      touchMove: false,
+      draggable: false,
+      fade: true,
+      infinite: true
+    })
+
+  }
+
+  if ($('.js-slider').length) {
+
+    $('.js-slider-next').on('click', function() {
+      const sliderTarget = '#' + $(this).data('target')
+      $(sliderTarget).slick('slickNext')
+      return false
+    })
+
+  }
+
+  if ($('#portfolio-slider').length) {
+
+    $('#portfolio-slider').slick({
+      arrows: false,
+      autoplay: false,
+      swipe: false,
+      touchMove: false,
+      draggable: false,
+      fade: true,
+      infinite: true
+    })
 
   }
 
@@ -125,8 +155,8 @@ $(document).ready(function() {
       "showTime": false,
       "showImages": false,
       "lang": 'en'
-    };
-    twitterFetcher.fetch(configProfile);
+    }
+    twitterFetcher.fetch(configProfile)
   }
 
-});
+})
