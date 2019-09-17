@@ -1,39 +1,55 @@
 function openModal(companyId) {
-  companyData = getCompanyData(companyId)
+  const companyData = getCompanyData(companyId)
   if (companyData) {
-    $('#modal').html('')
-    template = Elefund.templates["portfolio-details"]
-    templateData = template(companyData)
-    $('#modal').html(templateData)
+    const modal = $('#modal')
+    modal.html('')
+    const template = Elefund.templates["portfolio-details"]
+    const templateData = template(companyData)
+    modal.html(templateData)
     $('body').addClass('is-modal-active')
+    addEventListener('keyup', closeModalOnEsc)
   }
 }
 
 function closeModal() {
   $('body').removeClass('is-modal-active')
-  $('#modal').html('') 
+  $('#modal').html('')
+  removeEventListener('keyup', closeModalOnEsc)
+}
+
+function closeModalOnEsc(event) {
+  if (event.key == 'Escape' || event.key == 'Esc' || event.keyCode == 27) {
+    event.preventDefault()
+    closeModal()
+    return false
+  }
 }
 
 function getCompaniesData() {
-  $.getJSON("/javascripts/data.json", {
+  $.getJSON("/javascripts/companies.json", {
     format: "json"
   })
-    .done(function(data) {
-      companiesList = data
-    })
-    .fail(function() {
-      console.log( "Error getting json" )
-    })
+  .done(function(data) {
+    companiesData = data
+    renderStageCompanies('seed', '#seed-stage')
+    renderStageCompanies('series_a', '#series-a-stage')
+    renderStageCompanies('later_stage', '#later-stage')
+  })
+  .fail(function(error) {
+    console.log( "Error getting json:", error.status )
+  })
 }
 
 function getCompanyData(companyId) {
-  companyItem = null
-  companiesList.forEach((company) => {
-    if (company.id == companyId) {
-      companyItem = company
-    }
-  })
+  const companyItem = companiesData.find(company => company.id == companyId)
   return companyItem
+}
+
+function renderStageCompanies(stage, DOMElement) {
+  const companiesList = companiesData.filter(company => company.stage == stage)
+  const template = Elefund.templates["portfolio-items"]
+  const templateData = template({companies: companiesList})
+  $(DOMElement).html(templateData)
 }
 
 function toggleMobileMenu() {
@@ -42,12 +58,9 @@ function toggleMobileMenu() {
 
 $(document).ready(function() {
 
-  var companiesList, companyItem
-  getCompaniesData()
-
-  $('.toggle-modal').on('click', function(event) {
+  $('.portfolio-grid').on('click', '.toggle-modal', function(event) {
     event.preventDefault()
-    targetCompany = $(this).attr('href').trim().replace('#', '')
+    const targetCompany = $(this).attr('href').trim().replace('#', '')
     openModal(targetCompany)
   })
 
@@ -77,6 +90,11 @@ $(document).ready(function() {
   $('.animate-element').addClass('offset')
   $('.animate-element-delay').addClass('offset')
 
+  if ($('.js-portfolio').length) {
+    const companiesData = []
+    getCompaniesData()
+  }
+
   if ($('#home-slider').length) {
 
     var fillerTimeoutDelay
@@ -84,7 +102,7 @@ $(document).ready(function() {
     function fillerTimeout(currentSlide) {
       fillerTimeoutDelay = setTimeout(function() {
         $('#home-slider .slick-slide[data-slick-index=' + currentSlide + '] .filler').removeClass('animate')
-      }, 200)
+      }, 400)
     }
 
     
@@ -146,8 +164,8 @@ $(document).ready(function() {
   }
 
   if ($('#latest-tweet').length) {
-    var configProfile = {
-      "profile": {"screenName": 'google'},
+    const configProfile = {
+      "profile": {"screenName": 'elefundvc'},
       "domId": 'latest-tweet',
       "maxTweets": 1,
       "enableLinks": false, 
@@ -158,5 +176,11 @@ $(document).ready(function() {
     }
     twitterFetcher.fetch(configProfile)
   }
+
+  Handlebars.registerHelper('breaklines', function(text) {
+    text = Handlebars.Utils.escapeExpression(text);
+    text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+    return new Handlebars.SafeString(text);
+});
 
 })

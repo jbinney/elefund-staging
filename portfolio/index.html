@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body class="js-portfolio">
     <div class="overflow">
             <header class="site-header">
               <nav class="site-nav">
@@ -19,7 +19,7 @@
                       <div class="line"></div>
                     </button>
                   </li>
-                  <li class="site-nav-item logo"><a class="site-nav-link" href="/"><img src="/images/logo.svg" width="101" height="18" alt="Elefund"></a></li>
+                  <li class="site-nav-item logo"><a class="site-nav-link" href="/"><img src="/images/logo-full.svg" width="150" height="32" alt="Elefund"></a></li>
                   <li class="site-nav-item d-none d-sm-block active"><a class="site-nav-link" href="/portfolio" title="portfolio">Portfolio</a></li>
                   <li class="site-nav-item d-none d-sm-block"><a class="site-nav-link" href="/about">About us</a></li>
                 </ul>
@@ -34,78 +34,68 @@
                 <div class="site-menu-mobile-copyright">&copy; 2019 Elefund. All rights reserved.</div>
               </nav>
             </header>
-      <section class="content-section hero">
+      <section class="hero-section-slider">
         <div class="hero-section-arrow-block">
-          <div class="hero-section-arrow loader"><i class="icomoon icon-arrow-right"></i></div>
+          <button class="hero-section-arrow js-slider-next" id="slider-circle-animation" type="button" data-target="home-slider"><i class="icomoon icon-arrow-right"></i></button>
         </div>
-        <div class="container">
-          <div class="content-shrink">
-            <h1>We partner with trasformational companies at the seed stage</h1>
-            <p class="lead">Baiju and Vladimir of Robinhood helped us believe stock trading can for young generations, too.</p>
+        <div class="js-slider" id="home-slider">
+          <div class="content-section js-slider-item">
+            <div class="container">
+              <div class="content-shrink-wide no-mobile-padding">
+                <h1>We’ve made early investments in dozens of high impact&nbsp;companies.</h1>
+                <p class="lead">Handle (Series A, 2019) creates financial software for the construction&nbsp;industry.</p>
+              </div>
+            </div>
+            <div class="content-image">
+              <div class="img-clip">
+                <div class="filler"></div><img src="/images/photos/portfolio-hero-handle.jpg" width="1920" height="1272" alt="Handle">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="content-image">
-          <div class="img-clip"><img src="/images/unsplash.jpg" width="1600" height="1200" alt=""></div>
+          <div class="content-section js-slider-item">
+            <div class="container">
+              <div class="content-shrink-wide no-mobile-padding">
+                <div class="h1">We’ve made early investments in dozens of high impact&nbsp;companies.</div>
+                <p class="lead">Landed (Series A, 2018) provides financing services for home&nbsp;buyers.</p>
+              </div>
+            </div>
+            <div class="content-image">
+              <div class="img-clip">
+                <div class="filler"></div><img src="/images/photos/portfolio-hero-landed.jpg" width="1280" height="853" alt="Landed">
+              </div>
+            </div>
+          </div>
+          <div class="content-section js-slider-item">
+            <div class="container">
+              <div class="content-shrink-wide no-mobile-padding">
+                <div class="h1">We’ve made early investments in dozens of high impact&nbsp;companies.</div>
+                <p class="lead">WorkRamp (Seed, 2018) is a workforce training&nbsp;platform.</p>
+              </div>
+            </div>
+            <div class="content-image">
+              <div class="img-clip">
+                <div class="filler"></div><img src="/images/photos/portfolio-hero-workramp.jpg" width="1920" height="1920" alt="WorkRamp">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="content-section">
         <div class="container">
-          <div class="content-shrink">
-            <h2>Seed stage</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <ul class="portfolio-grid">
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-calm" href="#calm"><img class="portfolio-image" src="/images/brands/calm.png" width="118" alt="Calm"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-robinhood" href="#robinhood"><img class="portfolio-image" src="/images/brands/robinhood.svg" width="118" alt="Robinhood"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-carta" href="#carta"><img class="portfolio-image" src="/images/brands/carta.png" width="118" alt="Carta"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-citybldr" href="#citybldr"><img class="portfolio-image" src="/images/brands/citybldr.png" width="118" alt="Citybldr"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-boost" href="#boost"><img class="portfolio-image" src="/images/brands/boost.png" width="118" alt="Boost"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-pie-insurance" href="#pie-insurance"><img class="portfolio-image" src="/images/brands/pie-insurance.svg" width="118" alt="Pie Insurance"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-common-stock" href="#common-stock"><img class="portfolio-image" src="/images/brands/commonstock.png" width="118" alt="CommonStock"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-nimbella" href="#nimbella"><img class="portfolio-image" src="/images/brands/nimbella.png" width="118" alt="Nimbella"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-workramp" href="#workramp"><img class="portfolio-image" src="/images/brands/workramp.svg" width="118" alt="Workramp"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-secfi" href="#secfi"><img class="portfolio-image" src="/images/brands/secfi.png" width="118" alt="Secfi"></a></li>
-          </ul>
+          <h2>Seed stage</h2>
+          <ul class="portfolio-grid" id="seed-stage"></ul>
         </div>
       </section>
       <section class="content-section next">
         <div class="container">
-          <div class="content-shrink">
-            <h2>Pre Series A</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <ul class="portfolio-grid">
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-capture" href="#capture"><img class="portfolio-image" src="/images/brands/capture.svg" width="118" alt="Capture"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-landed" href="#landed"><img class="portfolio-image" src="/images/brands/landed.png" width="118" alt="Landed"></a></li>
-          </ul>
+          <h2>Series A</h2>
+          <ul class="portfolio-grid" id="series-a-stage"></ul>
         </div>
       </section>
       <section class="content-section next">
         <div class="container">
-          <div class="content-shrink">
-            <h2>Series A</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <ul class="portfolio-grid">
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-beyond-games" href="#beyond-games"><img class="portfolio-image" src="/images/brands/beyond-games.png" width="118" alt="Beyond Games"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-pogoseat" href="#pogoseat"><img class="portfolio-image" src="/images/brands/pogoseat.png" width="118" alt="Pogoseat"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-astranis" href="#astranis"><img class="portfolio-image" src="/images/brands/astranis.png" width="118" alt="Astranis"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-fleet" href="#fleet"><img class="portfolio-image" src="/images/brands/fleet.svg" width="118" alt="Fleet"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-relay" href="#relay"><img class="portfolio-image" src="/images/brands/relay.svg" width="118" alt="Relay"></a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="content-section next">
-        <div class="container">
-          <div class="content-shrink">
-            <h2>Post Series A</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <ul class="portfolio-grid">
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-hyperloop" href="#hyperloop"><img class="portfolio-image" src="/images/brands/hyperloop.png" width="118" alt="Hyperloop One"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-beam" href="#beam"><img class="portfolio-image" src="/images/brands/beam.png" width="118" alt="Beam"></a></li>
-            <li class="portfolio-item"><a class="portfolio-link toggle-modal brand-fastly" href="#fastly"><img class="portfolio-image" src="/images/brands/fastly.svg" width="118" alt="Fastly"></a></li>
-          </ul>
+          <h2>Later Stage</h2>
+          <ul class="portfolio-grid" id="later-stage"></ul>
         </div>
       </section>
       <section class="content-section">
@@ -114,9 +104,9 @@
           <div class="content-shrink-wide content-centered">
             <h2>Latest Updates</h2>
             <div class="lead latest-tweet" id="latest-tweet"></div>
-            <p class="lead"><a href="/portfolio">@elefundnews</a></p>
+            <p class="lead"><a href="https://twitter.com/elefundvc" target="_blank">@ElefundVC</a></p>
           </div>
-        </div><a class="btn-round-blue" href="https://twitter.com/elefundnews"><i class="icomoon icon-arrow-right"></i></a>
+        </div><a class="btn-round-blue" href="https://twitter.com/elefundvc" target="_blank"><i class="icomoon icon-arrow-right"></i></a>
       </section>
             <footer class="site-footer">
               <nav class="site-nav">
