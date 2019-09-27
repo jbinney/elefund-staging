@@ -76,19 +76,11 @@ $(document).ready(function() {
     toggleMobileMenu()
   })
 
-  const os = new OnScreen({
-    tolerance: 200,
-    debounce: 100,
-    container: window
+  $.appear('.animated-section')
+  $('.animated-section').on('appear', (event, $elements) => {
+    $elements.find('.animate-element, .animate-element-delay').addClass('enter')
   })
-
-  os.on('enter', '.animated-section', (element, event) => {
-    $('.animate-element').removeClass('offset')
-    $('.animate-element-delay').removeClass('offset')
-  })
-
-  $('.animate-element').addClass('offset')
-  $('.animate-element-delay').addClass('offset')
+  setTimeout($.force_appear)
 
   if ($('.js-portfolio').length) {
     const companiesData = []

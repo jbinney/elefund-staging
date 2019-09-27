@@ -39,6 +39,19 @@
     "description": "Calm offers an application designed to help its users meditate and relax. The application is available in the App Store and Google Play store.\n\nThe company is driven by a mission to make the world happier and healthier by developing a range of digital and physical products that enhance mental fitness and alleviate some of the most important mental health issues of the modern age including anxiety, depression, insomnia, and stress. Calm was named by Apple as the 2017 iPhone App of the Year and by Google Play as an Editors’ Choice in 2018.\n\nThe company was founded in 2012 and is headquartered in San Francisco, California."
   },
   {
+    "id": "handle",
+    "name": "Handle",
+    "stage": "seed",
+    "year": "2019",
+    "logo": "handle.svg",
+    "sector": "Financial Technology",
+    "stage_info": "Seed, 2019",
+    "hostname": "handle.com",
+    "url": "https://www.handle.com/",
+    "crunchbase_url": "https://www.crunchbase.com/organization/handle-com",
+    "description": "Handle automates the collection process of unpaid construction invoices by providing an all-in-one lien management platform that \nhelps secure the rights of contractors.  "
+  },
+  {
     "id": "loona",
     "name": "Loona",
     "stage": "seed",
@@ -247,17 +260,17 @@
     "description": "Pogoseat is an enterprise solution for sports teams and concert venues that enables their fans to upgrade seats and purchase unique VIP upgrades during events. Their mission is to provide fans with the ability to optimize their live entertainment experience and teams and venues a platform to increase fan engagement, monetize unused inventory and gather data to improve the fan experience."
   },
   {
-    "id": "handle",
-    "name": "Handle",
+    "id": "fidel",
+    "name": "Fidel",
     "stage": "series_a",
     "year": "2019",
-    "logo": "handle.svg",
+    "logo": "fidel.svg",
     "sector": "Financial Technology",
     "stage_info": "Series A, 2019",
-    "hostname": "handle.com",
-    "url": "https://www.handle.com/",
-    "crunchbase_url": "https://www.crunchbase.com/organization/handle-com",
-    "description": "Handle automates the collection process of unpaid construction invoices by providing an all-in-one lien management platform that \nhelps secure the rights of contractors.  "
+    "hostname": "fidel.uk",
+    "url": "https://fidel.uk/",
+    "crunchbase_url": "https://www.crunchbase.com/organization/fidel",
+    "description": "Fidel’s mission is to democratise access to consumer financial data, globally.\n\nFidel is working to build a world where power and control of data shifts back to its creator - the consumer. Fidel makes transactional data accessible through a single access point so businesses can create web and mobile applications using real-time payment data. By linking customer payment cards to reward programmes, businesses like British Airways, Perkbox and Royal Bank of Canada are turning payments into loyalty.\n\nFidel is backed by the U.K’s Technology Strategy Board (Innovate U.K.) and Horizons Ventures."
   },
   {
     "id": "secfi",
