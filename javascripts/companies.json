@@ -39,6 +39,32 @@
     "description": "Calm offers an application designed to help its users meditate and relax. The application is available in the App Store and Google Play store.\n\nThe company is driven by a mission to make the world happier and healthier by developing a range of digital and physical products that enhance mental fitness and alleviate some of the most important mental health issues of the modern age including anxiety, depression, insomnia, and stress. Calm was named by Apple as the 2017 iPhone App of the Year and by Google Play as an Editors’ Choice in 2018.\n\nThe company was founded in 2012 and is headquartered in San Francisco, California."
   },
   {
+    "id": "pie-insurance",
+    "name": "Pie Insurance",
+    "stage": "seed",
+    "year": "2017",
+    "logo": "pie-insurance.svg",
+    "sector": "Financial Technology",
+    "stage_info": "Seed, 2017 · Series A, 2018 · Series B, 2019",
+    "hostname": "pieinsurance.com",
+    "url": "https://pieinsurance.com",
+    "crunchbase_url": "https://www.crunchbase.com/organization/pie-insurance",
+    "description": "Pie Insurance is a workers’ compensation insurance company that provides workers’ comp coverage to small businesses through a simple online experience. Offering A.M. Best A rated insurance, Pie leverages data analytics, easy-to-use online features, and a seasoned team of insurance experts to revolutionize workers’ comp for small businesses.\n\nAs a technology-enabled workers’ compensation insurance company, Pie leverages extensive, high-quality data sets to segment and price small business policies, accurately assessing risks and passing savings on to small business owners.\n\nPie began selling workers comp insurance policies direct to customers in 2018. The company is led by co-founder and CEO John Swigart."
+  },
+  {
+    "id": "hotel-engine",
+    "name": "Hotel Engine",
+    "stage": "seed",
+    "year": "2017",
+    "logo": "hotel-engine.svg",
+    "sector": "Travel",
+    "stage_info": "Seed, 2017",
+    "hostname": "hotelengine.com",
+    "url": "https://www.hotelengine.com",
+    "crunchbase_url": "https://www.crunchbase.com/organization/hotel-engine",
+    "description": "Launched in November of 2014, Hotel Engine is a Denver-grown startup with the mission to provide meaningful innovation and exclusive savings for the nation's traveling workforce.\n\nToday, Hotel Engine empowers companies to save and streamline instantly - connecting hundreds of companies with thousands of travelers and hotel partners to an exclusive membership platform."
+  },
+  {
     "id": "handle",
     "name": "Handle",
     "stage": "seed",
@@ -180,32 +206,6 @@
     "url": "https://www.commonstock.com",
     "crunchbase_url": "https://www.crunchbase.com/organization/groupstake-2",
     "description": "CommonStock is group-chat for investing: get alerts when friends trade, see what friends own (by %), and see who's best in the group."
-  },
-  {
-    "id": "pie-insurance",
-    "name": "Pie Insurance",
-    "stage": "seed",
-    "year": "2017",
-    "logo": "pie-insurance.svg",
-    "sector": "Financial Technology",
-    "stage_info": "Seed, 2017 · Series A, 2018 · Series B, 2019",
-    "hostname": "pieinsurance.com",
-    "url": "https://pieinsurance.com",
-    "crunchbase_url": "https://www.crunchbase.com/organization/pie-insurance",
-    "description": "Pie Insurance is a workers’ compensation insurance company that provides workers’ comp coverage to small businesses through a simple online experience. Offering A.M. Best A rated insurance, Pie leverages data analytics, easy-to-use online features, and a seasoned team of insurance experts to revolutionize workers’ comp for small businesses.\n\nAs a technology-enabled workers’ compensation insurance company, Pie leverages extensive, high-quality data sets to segment and price small business policies, accurately assessing risks and passing savings on to small business owners.\n\nPie began selling workers comp insurance policies direct to customers in 2018. The company is led by co-founder and CEO John Swigart."
-  },
-  {
-    "id": "hotel-engine",
-    "name": "Hotel Engine",
-    "stage": "seed",
-    "year": "2017",
-    "logo": "hotel-engine.svg",
-    "sector": "Travel",
-    "stage_info": "Seed, 2017",
-    "hostname": "hotelengine.com",
-    "url": "https://www.hotelengine.com",
-    "crunchbase_url": "https://www.crunchbase.com/organization/hotel-engine",
-    "description": "Launched in November of 2014, Hotel Engine is a Denver-grown startup with the mission to provide meaningful innovation and exclusive savings for the nation's traveling workforce.\n\nToday, Hotel Engine empowers companies to save and streamline instantly - connecting hundreds of companies with thousands of travelers and hotel partners to an exclusive membership platform."
   },
   {
     "id": "boost",
