@@ -65,6 +65,19 @@
     "description": "Launched in November of 2014, Hotel Engine is a Denver-grown startup with the mission to provide meaningful innovation and exclusive savings for the nation's traveling workforce.\n\nToday, Hotel Engine empowers companies to save and streamline instantly - connecting hundreds of companies with thousands of travelers and hotel partners to an exclusive membership platform."
   },
   {
+    "id": "greenpark",
+    "name": "GreenPark Sports",
+    "stage": "seed",
+    "year": "2019",
+    "logo": "greenpark.svg",
+    "sector": "Consumer App",
+    "stage_info": "Seed, 2019",
+    "hostname": "greenparksports.com",
+    "url": "https://greenparksports.com",
+    "crunchbase_url": "",
+    "description": "GreenPark Sports is a technology company that focuses on fan engagement experiences for live sports."
+  },
+  {
     "id": "handle",
     "name": "Handle",
     "stage": "seed",
