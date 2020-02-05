@@ -286,6 +286,19 @@
     "description": "Fidel’s mission is to democratise access to consumer financial data, globally.\n\nFidel is working to build a world where power and control of data shifts back to its creator - the consumer. Fidel makes transactional data accessible through a single access point so businesses can create web and mobile applications using real-time payment data. By linking customer payment cards to reward programmes, businesses like British Airways, Perkbox and Royal Bank of Canada are turning payments into loyalty.\n\nFidel is backed by the U.K’s Technology Strategy Board (Innovate U.K.) and Horizons Ventures."
   },
   {
+    "id": "astra",
+    "name": "Astra",
+    "stage": "series_a",
+    "year": "2017",
+    "logo": "astra.png",
+    "sector": "Aerospace",
+    "stage_info": "Series A, 2017",
+    "hostname": "astra.com",
+    "url": "https://astra.com/",
+    "crunchbase_url": "",
+    "description": "Astra's goal is to reshape how the space industry works, starting with how we get there. By offering smaller more frequent launches, Astra will enable a wave of innovation in low Earth orbit and improve life on our planet through greater connectivity and more regular observation."
+  },
+  {
     "id": "secfi",
     "name": "SecFi",
     "stage": "series_a",
