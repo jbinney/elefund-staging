@@ -351,17 +351,17 @@
     "description": "Fastly helps the world’s most popular digital businesses keep pace with their customer expectations by delivering fast, secure, and scalable online experiences. Businesses trust the Fastly edge cloud platform to accelerate the pace of technical innovation, mitigate evolving threats, and scale on demand.\n\nFounded in 2011, Fastly powers online destinations including Airbnb, GitHub, Alaska Airlines, Pinterest, Vimeo, The Guardian, The New York Times and Ticketmaster.\n\nThe company is headquartered in San Francisco, California, United States."
   },
   {
-    "id": "ubeam",
-    "name": "uBeam",
+    "id": "sonic-energy",
+    "name": "SonicEnergy",
     "stage": "later_stage",
     "year": "2018",
-    "logo": "ubeam.png",
+    "logo": "sonic-energy.png",
     "sector": "Energy",
     "stage_info": "Series B, 2018",
-    "hostname": "ubeam.com",
-    "url": "http://www.ubeam.com",
+    "hostname": "sonicenergy.com",
+    "url": "https://sonicenergy.com/",
     "crunchbase_url": "https://www.crunchbase.com/organization/ubeam",
-    "description": "uBeam is a wireless power startup that transmits power to charge electronic devices over-the-air. Its ultrasonic technology comprises a transmitter, which emits high frequency sound that is inaudible to users and their pets; and transmits power directly to receivers requesting power, which convert power to usable electrical energy using energy-harvesting technology. The company’s ultrasound system focuses on emitting power at home, on-the-go, and at work."
+    "description": "SonicEnergy’s proprietary transducers, transmitters, receivers, and software deliver wire-free power-at-a-distance of meters to units ranging from IoT devices, medical & aerospace systems, to portable electronics products. A turnkey hardware and software solution delivering Always-On Wireless Energy."
   },
   {
     "id": "hyperloop-one",
