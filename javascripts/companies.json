@@ -65,6 +65,19 @@
     "description": "Launched in November of 2014, Hotel Engine is a Denver-grown startup with the mission to provide meaningful innovation and exclusive savings for the nation's traveling workforce.\n\nToday, Hotel Engine empowers companies to save and streamline instantly - connecting hundreds of companies with thousands of travelers and hotel partners to an exclusive membership platform."
   },
   {
+    "id": "voyager",
+    "name": "Voyager Space Holdings",
+    "stage": "seed",
+    "year": "2020",
+    "logo": "voyager.png",
+    "sector": "Aerospace",
+    "stage_info": "Seed, 2020",
+    "hostname": "voyagerspaceholdings.com",
+    "url": "https://voyagerspaceholdings.com/",
+    "crunchbase_url": "https://www.crunchbase.com/organization/voyager-space-holdings",
+    "description": "Voyager Space Holdings is a privately held global holding company acquiring and operating companies in the space exploration industry. Voyager seeks to increase vertical integration and mission capability to enable humanity’s most ambitious projects."
+  },
+  {
     "id": "greenpark",
     "name": "GreenPark Sports",
     "stage": "seed",
